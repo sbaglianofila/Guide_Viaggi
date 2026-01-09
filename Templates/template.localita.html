@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pagina località - Guida Viaggi" />
+  <title>Guida Viaggi — Località di esempio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🧭</span>
+        <span class="brand-name">Guida Viaggi</span>
+      </div>
+
+      <nav class="top-actions" aria-label="Azioni">
+        <a class="btn btn-ghost" href="index.html">← Torna all’indice</a>
+        <button class="btn btn-ghost" type="button" data-action="toggle-theme" aria-pressed="false">
+          🌙 <span class="hide-sm">Tema</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <div class="container">
+      <!-- Breadcrumb semplice (opzionale) -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Indice</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Località di esempio</span>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-box">
+          <h1>Località di esempio</h1>
+          <p class="lead">
+            Una destinazione fittizia per mostrare layout, sezioni opzionali e indice automatico.
+          </p>
+
+          <dl class="meta">
+            <div>
+              <dt>Quando andare</dt>
+              <dd>Primavera / Autunno</dd>
+            </div>
+            <div>
+              <dt>Tempo minimo</dt>
+              <dd>2–3 giorni</dd>
+            </div>
+            <div>
+              <dt>Budget</dt>
+              <dd>€€</dd>
+            </div>
+          </dl>
+        </div>
+      </header>
+
+      <div class="layout">
+        <!-- Sommario sticky desktop -->
+        <aside class="toc" aria-label="Indice sezioni">
+          <div class="toc-card card">
+            <div class="toc-head">
+              <h2 class="h4">Indice</h2>
+              <a class="link" href="index.html">Indice località</a>
+            </div>
+            <nav>
+              <ol class="toc-list" data-toc>
+                <!-- popolato via JS con le sezioni VISIBILI -->
+              </ol>
+            </nav>
+          </div>
+        </aside>
+
+        <!-- Contenuto -->
+        <article class="content">
+          <!-- Nota: ogni sezione ha class="section" e un id. -->
+          <section id="cenni-storici" class="section card" data-optional="true">
+            <h2>Cenni Storici</h2>
+            <p>
+              Due righe per contestualizzare: origini, epoche principali, cambiamenti urbanistici.
+              Mantieni questa sezione breve e leggibile.
+            </p>
+          </section>
+
+          <section id="cose-da-vedere" class="section card">
+            <h2>Cose da Vedere</h2>
+
+            <!-- Attrazione 1 -->
+            <div class="attraction">
+              <h3>Centro storico</h3>
+              <p>
+                Passeggiata tra strade principali e vicoli. Ideale la mattina presto per evitare folla.
+              </p>
+              <ul>
+                <li>Punto panoramico</li>
+                <li>Piazza principale</li>
+                <li>Mercato locale</li>
+              </ul>
+            </div>
+
+            <!-- Attrazione 2 -->
+            <div class="attraction">
+              <h3>Museo cittadino</h3>
+              <p>
+                Piccolo ma ben curato: collezioni permanenti e una sala dedicata alle mostre temporanee.
+              </p>
+              <ul>
+                <li>Durata visita: 1–2 ore</li>
+                <li>Biglietto: € (indicativo)</li>
+              </ul>
+            </div>
+
+            <!-- Attrazione 3 -->
+            <div class="attraction">
+              <h3>Quartiere moderno</h3>
+              <p>
+                Architettura contemporanea, locali e street art. Ottimo al tramonto.
+              </p>
+            </div>
+          </section>
+
+          <section id="curiosita" class="section card" data-optional="true">
+            <h2>Curiosità</h2>
+            <p>
+              Una curiosità carina e una nota culturale: tradizioni, eventi o particolarità linguistiche.
+            </p>
+          </section>
+
+          <section id="cosa-mangiare" class="section card">
+            <h2>Cosa mangiare</h2>
+            <ul>
+              <li>Piatto tipico 1 (spiegazione breve)</li>
+              <li>Piatto tipico 2 (spiegazione breve)</li>
+              <li>Dolce o specialità (spiegazione breve)</li>
+            </ul>
+          </section>
+
+          <section id="come-arrivare" class="section card">
+            <h2>Come arrivare</h2>
+            <ul>
+              <li><strong>Aereo:</strong> aeroporto più vicino + trasferimento</li>
+              <li><strong>Treno:</strong> stazione principale + tempi indicativi</li>
+              <li><strong>Auto:</strong> parcheggi consigliati / ZTL (se rilevante)</li>
+            </ul>
+          </section>
+
+          <section id="trasporti-interni" class="section card" data-optional="true">
+            <h2>Trasporti interni</h2>
+            <p>
+              Metro/bus/tram o a piedi: consigli, abbonamenti giornalieri e zone da evitare per traffico.
+            </p>
+          </section>
+
+          <!-- SEZIONE VUOTA: deve sparire -->
+          <section id="alloggio" class="section card" data-optional="true">
+            <h2>Alloggio</h2>
+
+            <!-- Hotel 1 -->
+            <div class="attraction">
+              <h3>Hotel Esempio Centrale</h3>
+
+              <dl class="meta">
+                <div>
+                  <dt>Indirizzo</dt>
+                  <dd>Via Esempio 12, Centro</dd>
+                </div>
+                <div>
+                  <dt>Check-in</dt>
+                  <dd>Dalle 14:00</dd>
+                </div>
+                <div>
+                  <dt>Check-out</dt>
+                  <dd>Entro le 11:00</dd>
+                </div>
+                <div>
+                  <dt>Prezzo indicativo</dt>
+                  <dd>€€ – €120 / notte</dd>
+                </div>
+              </dl>
+
+              <p class="muted">
+                Hotel comodo per muoversi a piedi, camere pulite ma essenziali.
+                Buona soluzione per soggiorni brevi.
+              </p>
+            </div>
+
+            <!-- Hotel 2 -->
+            <div class="attraction">
+              <h3>Guesthouse Quartiere Storico</h3>
+
+              <dl class="meta">
+                <div>
+                  <dt>Indirizzo</dt>
+                  <dd>Piazza Antica 3</dd>
+                </div>
+                <div>
+                  <dt>Check-in</dt>
+                  <dd>Dalle 15:00</dd>
+                </div>
+                <div>
+                  <dt>Check-out</dt>
+                  <dd>Entro le 10:30</dd>
+                </div>
+                <div>
+                  <dt>Prezzo indicativo</dt>
+                  <dd>€ – €70 / notte</dd>
+                </div>
+              </dl>
+
+              <p class="muted">
+                Struttura piccola e tranquilla, ideale se vuoi stare in una zona autentica.
+                Attenzione alle scale (no ascensore).
+              </p>
+            </div>
+
+          </section>
+
+
+          <!-- SEZIONE NASCOSTA VIA ATTRIBUTO: deve sparire -->
+          <section id="note-finali" class="section card" data-optional="true" data-hide="true">
+            <h2>Note finali</h2>
+            <p>Questa è marcata data-hide="true" e quindi non deve comparire.</p>
+          </section>
+
+          <div class="page-actions">
+            <button class="btn" type="button" data-action="scroll-top">↑ Torna su</button>
+            <button class="btn btn-ghost" type="button" onclick="window.print()">🖨️ Stampa</button>
+          </div>
+        </article>
+      </div>
+
+      <footer class="site-footer">
+        <a class="link" href="index.html">Torna all’indice</a>
+        <p class="muted">© <span data-year></span> — Guida Viaggi. Personalizza liberamente.</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

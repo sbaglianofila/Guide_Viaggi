@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Guida viaggi statica per GitHub Pages" />
+  <title>Guida Viaggi — Indice</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">??</span>
+        <span class="brand-name">Guida Viaggi</span>
+      </div>
+
+      <nav class="top-actions" aria-label="Azioni">
+        <button class="btn btn-ghost" type="button" data-action="toggle-theme" aria-pressed="false">
+          ?? <span class="hide-sm">Tema</span>
+        </button>
+        <a class="btn btn-ghost" href="template-localita.html">Template</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <div class="container narrow">
+      <header class="page-title">
+        <h1>Indice località</h1>
+        <p class="muted">
+          Seleziona una località oppure usa la ricerca. Pagine statiche, zero dipendenze.
+        </p>
+      </header>
+
+      <section class="card" aria-label="Ricerca">
+        <label class="field">
+          <span class="field-label">Cerca una località</span>
+          <input id="search" class="input" type="search" placeholder="Es. Roma, Parigi..." autocomplete="off" />
+        </label>
+        <p class="hint">Suggerimento: la ricerca filtra titolo e descrizione.</p>
+      </section>
+
+      <section class="grid" aria-label="Elenco località">
+        <a class="card location" href="roma.html">
+          <h2 class="h3">Roma</h2>
+          <p class="muted">Classici intramontabili, passeggiate e cucina romana.</p>
+          <span class="pill">Italia</span>
+        </a>
+
+        <a class="card location" href="parigi.html">
+          <h2 class="h3">Parigi</h2>
+          <p class="muted">Musei, quartieri iconici e café culture.</p>
+          <span class="pill">Francia</span>
+        </a>
+
+        <a class="card location" href="template-localita.html">
+          <h2 class="h3">Località di esempio</h2>
+          <p class="muted">Pagina tipo con sezioni, indice sticky e opzionali.</p>
+          <span class="pill">Template</span>
+        </a>
+      </section>
+
+      <footer class="site-footer">
+        <p class="muted">© <span data-year></span> — Guida Viaggi. Statico, semplice, riutilizzabile.</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
